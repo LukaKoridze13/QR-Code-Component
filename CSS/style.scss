@@ -1,13 +1,64 @@
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-$font:'Outfit', sans-serif;
+$font: 'Outfit', sans-serif;
 
 // COLORS
 $white: hsl(0, 0%, 100%);
 $light_gray: hsl(212, 45%, 89%);
 $grayish_blue: hsl(220, 15%, 55%);
 $dark_blue: hsl(218, 44%, 22%);
-
+$grey:  hsla(219, 15%, 55%, 1);
 // WEIGHTS
 $bold: 700;
-$light:400;
+$light: 400;
+
+// GLOBAL STYLES
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: $light_gray;
+
+    .card {
+        width: 320px;
+        height: 497px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+        border-radius: 20px;
+        padding: 16px;
+        font-family: $font;
+
+        img {
+            width: 288px;
+            height: 288px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            height: 56px;
+            font-weight:$bold;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: center;
+            color: $dark_blue;
+            margin-top: 24px;
+        }
+
+        p {
+                height: 57px;
+                font-weight: $light;
+                font-size: 15px;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: 0.1875px;
+                color: $grey;
+                margin-top: 16px;
+        }
+    }
+}
